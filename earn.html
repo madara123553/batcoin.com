@@ -4,33 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="assets\css\earn.css">
+    <link rel="stylesheet" href="assets/css/respo.css">
     <meta name="theme-color" content="#f19e36" />
 
     <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.ico">
 </head>
-<body class="earn">
+<body class="login-page">
 
     <div class="haeder">
-        <a href="/notcoin">
+        <a href="index.html">
             <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22 11.9299H2" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M8.00009 19L2.84009 14C2.5677 13.7429 2.35071 13.433 2.20239 13.0891C2.05407 12.7452 1.97754 12.3745 1.97754 12C1.97754 11.6255 2.05407 11.2548 2.20239 10.9109C2.35071 10.567 2.5677 10.2571 2.84009 10L8.00009 5" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </a>
-        <!-- <h1>Notcoin</h1> -->
-    </div>
-
-    <div class="earn-more">
-        <img src="./assets/images/golden.png" width="80px">
-        <h3>Earn more coins</h3>
-    </div>
-
-    <div class="invite-bonus-box">
         
     </div>
+    <h1>Task List</h1>
     
-    <script src="./assets/js/charge.js"></script>
+    <div class="balance">
+        <p>Total Rewards Collected: <span id="total-reward">0</span> BatCoins</p>
+    </div>
+
+    <div class="task-container">
+        <ul class="task-list">
+            <li>
+                <a href="frens.html" onclick="collectReward(1, 500)">Invite 3 friends to join the platform</a>
+                <span>Reward: 5000</span>
+            </li>
+            <li>
+                <a href="index.html" onclick="collectReward(2, 200)">Add Bats U+1F987 emoji to your name</a>
+                <span>Reward: 2000</span>
+            </li>
+            <li>
+                <a href="https://t.me/+tO3j9D5pTc44ZDRl" onclick="collectReward(3, 300)">Join Our Telegram Community</a>
+                <span>Reward: 3000</span>
+            </li>
+            
+                <li>
+                    <a href="vnd.youtube://www.youtube.com/channel/UC1PiVir8xRDUdKtM6ns1xXQ" 
+                       onclick="collectReward(4, 150)">Subscribe YouTube Channel</a>
+                    <span>Reward: 1500</span>
+                </li>
+                <li>
+                    <a href="instagram://user?username=batscommunity7" 
+                       onclick="collectReward(5, 400)">Follow on Instagram</a>
+                    <span>Reward: 1500</span>
+                </li>
+                <li>
+                    <a href="vnd.youtube://youtu.be/Jl4frWRRjbA" 
+                       onclick="collectReward(4, 150)">Watch YouTube Video</a>
+                    <span>Reward: 1500</span>
+                </li>
+            
+            
+            <script>
+                function collectReward(rewardId, points) {
+                    // Your logic to collect reward
+                    console.log('Reward collected! ID:', rewardId, 'Points:', points);
+                }
+            </script>
+            
+            
+            <!-- Verification Form -->
+            <div id="verificationForm" style="display:none;">
+                <p>Enter the secret word from the video to claim your reward:</p>
+                <input type="text" id="verificationWord" placeholder="Enter the word">
+                <button onclick="verifyTask()">Verify</button>
+            </div>
+            
+           
+            
+        </ul>
+    </div>
+
+    <script src="assets\js\earn.js"></script>
 </body>
 </html>

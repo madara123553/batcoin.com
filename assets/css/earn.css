@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.balance {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.balance p {
+    font-size: 18px;
+}
+
+.task-container {
+    width: 100%;
+    max-width: 400px;
+    height: 200px; /* Adjust height as necessary */
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-list li {
+    margin-bottom: 15px;
+}
+
+.task-list a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #007bff;
+    display: block;
+}
+
+.task-list a:hover {
+    text-decoration: underline;
+}
+
+.task-list span {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.task-completed {
+    color: #aaa;
+    text-decoration: line-through;
+}

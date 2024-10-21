@@ -1,20 +1,37 @@
-const body = document.body;
-let coins = localStorage.getItem('coins');
+let notCoins = 1000; // Starting balance
 
-body.querySelector('#balance').textContent = Number(coins).toLocaleString()
+function updateBalance() {
+    document.getElementById('balance').innerText = `Balance: ${notCoins} NotCoins`;
+}
 
-const turbo = body.querySelector('#turbo');
-const charge = body.querySelector('#charge');
+function buyTurbo() {
+    if (notCoins >= 100) {
+        notCoins -= 100;
+        alert('You bought a Turbo Boost!');
+        updateBalance();
+    } else {
+        alert('Not enough NotCoins!');
+    }
+}
 
-turbo.addEventListener('click' , ()=>{
-    localStorage.setItem('count' , '40')
-    setTimeout(()=> {
-        localStorage.setItem('count' , '1')
-    }, 5000)
-})
+function buyCharge() {
+    if (notCoins >= 200) {
+        notCoins -= 200;
+        alert('You bought a Charge Boost!');
+        updateBalance();
+    } else {
+        alert('Not enough NotCoins!');
+    }
+}
 
+function buySuper() {
+    if (notCoins >= 500) {
+        notCoins -= 500;
+        alert('You bought a Super Boost!');
+        updateBalance();
+    } else {
+        alert('Not enough NotCoins!');
+    }
+}
 
-charge.addEventListener('click' , ()=> {
-    let total = localStorage.getItem('total')
-    localStorage.setItem('power' , total)
-})
+document.addEventListener('DOMContentLoaded', updateBalance);

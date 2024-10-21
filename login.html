@@ -21,39 +21,37 @@
         </a>
         <!-- <h1>Notcoin</h1> -->
     </div>
-
-    <div class="login-coins">
-        <img src="./assets/images/coin.png" width="50px">
-        <span class="login-coins-count"></span>
+    <h1>Task List</h1>
+    
+    <div class="balance">
+        <p>Total Rewards Collected: <span id="total-reward">0</span> NotCoins</p>
     </div>
 
-    <div class="login-page-detail">
-        <span>Sign up to save your rank and coins.</span>
+    <div class="task-container">
+        <ul class="task-list">
+            <li>
+                <a href="frens.html" onclick="collectReward(1, 500)">Invite 3 friends to join the platform</a>
+                <span>Reward: 5000</span>
+            </li>
+            <li>
+                <a href="index.html" onclick="collectReward(2, 200)">Add Bats U+1F987 emoji to your name</a>
+                <span>Reward: 2000</span>
+            </li>
+            <li>
+                <a href="https://t.me/+tO3j9D5pTc44ZDRl" onclick="collectReward(3, 300)">Join Our Telegram Community</a>
+                <span>Reward: 3000</span>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UC1PiVir8xRDUdKtM6ns1xXQ" onclick="collectReward(4, 150)">Subscribe Youtube Channel</a>
+                <span>Reward: 1500 </span>
+            </li>
+            <li>
+                <a href=" https://www.instagram.com/batscommunity7" onclick="collectReward(5, 400)">Follow on Instagram</a>
+                <span>Reward: 1500 </span>
+            </li>
+        </ul>
     </div>
 
-    <div class="login-form">
-        <form action="#">
-            <label for="name">name</label>
-            <input type="text" name="name" id="name">
-
-            <label for="email">email</label>
-            <input type="email" name="email" id="email">
-
-            <label for="password">password</label>
-            <input type="password" name="password" id="password">
-
-            <label for="confrim">confirm password</label>
-            <input type="password" name="confirm" id="confirm">    
-            
-            <input class="submit-button" type="button" value="submit">
-        </form>
-    </div>
-
-    <script>
-        let coins = localStorage.getItem('coins')
-        document.querySelector('.login-coins-count').textContent = coins;
-    </script>
-
-    <script src="./assets/js/charge.js"></script>
+    <script src="assets\js\earn.js"></script>
 </body>
 </html>

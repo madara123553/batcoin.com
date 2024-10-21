@@ -21,3 +21,158 @@
         width: 26.5rem;
     }
 }
+
+@media (max-width: 768px) {
+    .free-boosts-buttons {
+        flex-direction: column;
+    }
+
+    .free-boost-button {
+        margin-bottom: 10px;
+    }
+
+    .boosters-buttons {
+        flex-direction: column;
+    }
+
+    .boosters-button {
+        flex-direction: column;
+    }
+}
+
+
+/* Base mobile-first styles */
+body {
+    font-size: 16px;
+}
+
+header {
+    flex-direction: column;
+    text-align: center;
+}
+
+nav ul {
+    flex-direction: column;
+    margin: 10px 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+/* User balance section */
+.user-balance {
+    margin: 10px 0;
+}
+
+.balance-title {
+    font-size: 18px;
+}
+
+.balance-coins img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Free boosts section */
+.free-boosts-buttons {
+    flex-direction: column;
+}
+
+.free-boost-button {
+    margin: 10px 0;
+}
+
+/* Boosters section */
+.boosters-buttons {
+    flex-direction: column;
+}
+
+.boosters-button {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.boosters-button-detail {
+    flex-direction: column;
+}
+
+.boosters-button-image img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    font-size: 14px;
+    padding: 20px;
+}
+
+/* Responsive breakpoints */
+@media (min-width: 768px) {
+    /* Tablet styles */
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li {
+        margin-left: 15px;
+    }
+
+    .free-boosts-buttons {
+        flex-direction: row;
+    }
+
+    .free-boost-button {
+        flex: 1;
+        margin: 0 5px;
+    }
+
+    .boosters-button {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .boosters-button-detail {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Desktop styles */
+    body {
+        font-size: 18px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    .balance-title {
+        font-size: 22px;
+    }
+
+    .boosters-title {
+        font-size: 24px;
+    }
+
+    .boosters-button-image img {
+        width: 100px;
+        height: 100px;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+}
